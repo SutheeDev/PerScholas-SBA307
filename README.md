@@ -29,12 +29,12 @@ The site consists of three main pages:
 
 - Art: A gallery-style page showcasing artwork titles in a hoverable table format, allowing users to see different pieces when hovering over each title. Includes an email subscription form below the gallery.
 
-![Art Page](https://res.cloudinary.com/dnc7potxo/image/upload/v1730343557/ReadMe-Images/Per%20Scholas/SBA307/Art.png)
+![Art Page](https://res.cloudinary.com/dnc7potxo/image/upload/v1730343556/ReadMe-Images/Per%20Scholas/SBA307/Hover.gif)
 <br><br>
 
 - Contact: A contact page where users can fill out a form to reach the site admin, with input fields for name, last name, email, and a dropdown menu to select a contact topic.
 
-![Art Page](https://res.cloudinary.com/dnc7potxo/image/upload/v1730343556/ReadMe-Images/Per%20Scholas/SBA307/Contact.png)
+![Contact Page](https://res.cloudinary.com/dnc7potxo/image/upload/v1730343556/ReadMe-Images/Per%20Scholas/SBA307/Contact.png)
 <br><br>
 
 ## Design <a name="design"></a>
