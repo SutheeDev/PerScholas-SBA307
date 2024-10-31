@@ -1,0 +1,150 @@
+/* ----- Work Section ---- */
+
+#work,
+.work-content {
+  height: 100vh;
+  width: 100%;
+  min-height: 650px;
+  background-color: var(--white);
+}
+
+.work-content {
+  display: flex;
+  align-items: center;
+}
+
+.work-img {
+  width: 40%;
+  padding-left: 70px;
+}
+
+.proj-img {
+  width: 320px;
+  height: 468px;
+  background-image: url(/images/cross.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.work-table {
+  width: 60%;
+  padding-right: 70px;
+}
+
+.work-img img {
+  width: 300px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border-top: solid 1px var(--black);
+  font-size: 9px;
+  padding-top: 15px;
+}
+
+tr:last-child {
+  border-bottom: solid 1px var(--black);
+}
+
+th {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: var(--lg);
+  padding: 15px 0;
+}
+
+.work-desc {
+  text-align: right;
+}
+
+.table-order {
+  width: 200px;
+}
+
+.work-desc,
+th {
+  color: var(--black);
+}
+
+.table-order,
+.year {
+  color: var(--gray);
+}
+
+/* ----- hover ---- */
+
+#proj-01:hover,
+#proj-02:hover,
+#proj-03:hover,
+#proj-04:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+body:has(#proj-02:hover) .proj-img {
+  background-image: url(/images/orange.jpg);
+}
+
+body:has(#proj-03:hover) .proj-img {
+  background-image: url(/images/poster.jpg);
+}
+
+body:has(#proj-04:hover) .proj-img {
+  background-image: url(/images/ship.jpg);
+}
+
+/* ----- Subscribe Section ---- */
+
+#subscribe {
+  background-color: var(--cyan);
+  height: 450px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#subscribe h2,
+#subscribe p,
+label {
+  color: var(--white);
+}
+
+#subscribe h2 {
+  text-transform: uppercase;
+}
+
+#subscribe h2 {
+  margin-bottom: 20px;
+}
+#subscribe p {
+  margin-bottom: 15px;
+}
+form div {
+  margin-bottom: 30px;
+}
+
+.sub-input {
+  min-width: 450px;
+}
+
+.btn-sub {
+  min-width: 150px;
+  color: var(--white);
+  background-color: var(--cyan);
+  border: solid 2px var(--white);
+
+  transition: all 0.2s ease;
+}
+
+.btn-sub:hover {
+  background-color: var(--white);
+  color: var(--cyan);
+}

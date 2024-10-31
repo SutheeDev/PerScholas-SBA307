@@ -1,0 +1,67 @@
+#contact {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  background-color: var(--pink);
+  min-width: 500px;
+  padding: 20px 50px;
+  border-radius: 10px;
+}
+
+label,
+input,
+select {
+  display: block;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 10px;
+}
+.contact-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-name label,
+.email label,
+.help label {
+  text-align: left;
+}
+.contact-name div {
+  width: 48%;
+}
+#contact h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.contact-name,
+.email {
+  margin-bottom: 15px;
+}
+
+.help {
+  margin-bottom: 40px;
+}
+
+.btn-contact {
+  min-width: 150px;
+  color: var(--cyan);
+  background-color: var(--white);
+  border: solid 2px var(--white);
+
+  transition: all 0.2s ease;
+}
+
+.btn-contact:hover {
+  color: var(--white);
+  background-color: var(--cyan);
+  border: solid 2px var(--cyan);
+}

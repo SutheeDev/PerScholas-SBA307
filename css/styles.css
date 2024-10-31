@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #fdcccc;
+  --cyan: #0172f8;
+  --white: #f4f9fd;
+  --black: #000a17;
+  --gray: #92969a;
+
+  /* font-size */
+  --xlg: 90px;
+  --lg: 50px;
+  --md: 25px;
+  --sm: 20px;
+  --xsm: 14px;
+}
+
+body {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+td,
+th,
+label,
+button {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  color: var(--cyan);
+}
+
+h1 {
+  font-size: var(--xlg);
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -6px;
+}
+
+h2 {
+  font-size: var(--lg);
+}
+
+h3 {
+  font-size: var(--md);
+}
+
+p {
+  font-size: var(--xsm);
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+select {
+  padding: 1.2em;
+  border-radius: 8px;
+}
+
+button:hover,
+select:hover {
+  cursor: pointer;
+}
+
+input,
+select {
+  outline: none;
+  border: none;
+  color: var(--cyan);
+}
+
+input::placeholder {
+  color: var(--pink);
+}
+
+/* ----- hero ---- */
+
+#hero {
+  height: 100vh;
+  min-height: 650px;
+  background-color: var(--pink);
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  display: flex;
+  position: absolute;
+  top: 1.5em;
+  right: 02.5em;
+}
+
+.navigation div {
+  width: 60px;
+  text-align: center;
+}
+
+nav {
+  padding: 45px;
+}
+
+.header {
+  border-bottom: solid 1px var(--cyan);
+}
+
+.hero-content {
+  height: 100%;
+  display: flex;
+}
+
+.hero-text {
+  width: 60%;
+  padding: 100px 0 0 45px;
+}
+
+.hero-graphic {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.svg-nav {
+  width: 45px;
+}
+
+.svg-hero {
+  width: 120px;
+}
+
+.graphic-row {
+  height: 40%;
+  display: flex;
+}
+
+.graphic-row div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 3em;
+  border-bottom: solid 1px var(--cyan);
+  border-left: solid 1px var(--cyan);
+}
+
+.graphic-row.empty {
+  height: 20%;
+}
+
+div:empty {
+  border-bottom: none;
+}
+
+/* ----- Animation ---- */
+
+#asterisk {
+  animation: reappear 7s linear infinite;
+}
+#fourSQ {
+  animation: reappear 7s linear infinite reverse;
+}
+#hexagram {
+  animation: reappear 7s linear 3s infinite;
+}
+#zigzag {
+  animation: reappear 7s linear 3s infinite reverse;
+}
+
+@keyframes reappear {
+  0% {
+    opacity: 100;
+  }
+  49% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#hourglass {
+  animation: wiggle 5s linear infinite alternate;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  24% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  74% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* ----- see-our-work ---- */
+
+#see-our-work {
+  height: 100vh;
+  width: 100%;
+  min-height: 650px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(/images/half-donut.svg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.see-our-work-text {
+  color: var(--pink);
+}
+
+/* ----- footer ---- */
+
+#footer {
+  height: 100vh;
+  width: 100%;
+  min-height: 650px;
+  background-color: var(--pink);
+}
+
+.footer-graphic,
+.footer-content {
+  padding-left: 45px;
+}
+
+.footer-graphic {
+  padding-top: 200px;
+  margin-bottom: 50px;
+}
+
+.svg-footer {
+  width: 120px;
+}
+
+.footer-content {
+  display: flex;
+}
+
+.footer-content div:first-child {
+  width: 60%;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact p:first-child {
+  width: 30%;
+}
