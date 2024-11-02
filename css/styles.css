@@ -123,6 +123,14 @@ nav {
 .hero-text {
   width: 60%;
   padding: 100px 0 0 45px;
+  position: relative;
+}
+
+.arrow {
+  width: 100px;
+  position: absolute;
+  bottom: 7px;
+  left: 14px;
 }
 
 .hero-graphic {
