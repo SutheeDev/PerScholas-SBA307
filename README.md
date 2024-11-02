@@ -73,4 +73,4 @@ This project can be used as a reference for creating portfolio-style websites wi
 
 ## Feedback <a name="feedback"></a>
 
-Feedback to improve this project is welcome. If you have any suggestions or would like to collaborate, please get in touch with me on GitHub. Thanks!
+Feedback to improve this project is welcome. If you have any suggestions or would like to collaborate, please get in touch with me on [GitHub](https://github.com/SutheeDev). Thanks!
